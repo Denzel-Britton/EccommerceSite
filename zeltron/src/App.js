@@ -1,15 +1,18 @@
-import './App.css';
-import Header from './Header';
-import Home from './Home';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Home";
 function App() {
-  return (
-    //BEM
-    <div className="App">
-     
-      <Header />
-      <Home />
-    </div>
-  );
+return (
+  <div className="app">
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+  </div>
+);
 }
-
 export default App;
