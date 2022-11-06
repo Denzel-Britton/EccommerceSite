@@ -12,6 +12,14 @@ function Login() {
     const signIn = e => {
         e.preventDefault();
         //firebase login will happen here underneath
+        auth
+            .signInWithEmailAndPassword(email, password)
+            .then(auth => {
+                history.push('/')
+            })
+            .catch(error => alert(error.message))
+
+
     }     
 
     const register = e =>{
@@ -19,7 +27,7 @@ function Login() {
         //firebase register will happen here underneath
         auth
             .createUserWithEmailAndPassword(email, password)
-            .then((auth)=> {
+            .then((auth) => {
             // succes in creating a new user 
             // console.log(auth)
             if(auth){

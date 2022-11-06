@@ -1,5 +1,6 @@
 export const initialState = {
     basket: [],
+    user: null
   };
     //a seletor for loop increment and returns
     export const getBasketTotal = (basket) =>
@@ -29,6 +30,13 @@ export const initialState = {
               basket: newBasket
 
              }
+
+             case "SET_USER":
+             return {
+              ...state,
+              user: action.user
+             }
+             
             default:
                 return state;
     }
