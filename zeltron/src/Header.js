@@ -22,7 +22,7 @@ function Header() {
         <Link to="/"> 
         <img
           className="header_logo"
-          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          src="https://cdn.cp.adobe.io/content/2/dcx/186081ae-25ef-49a9-bf05-aaf801a6f482/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200"
         />
         </Link>
         
