@@ -26,13 +26,11 @@ function App() {
       } else {
         // user is logged out
         dispatch({
-          type: "SET_USER",
+          type: 'SET_USER',
           user: null
         })
       }
     })
-    
-
     
   }, [])
 

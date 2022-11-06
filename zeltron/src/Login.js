@@ -27,7 +27,7 @@ function Login() {
         //firebase register will happen here underneath
         auth
             .createUserWithEmailAndPassword(email, password)
-            .then((auth)=> {
+            .then((auth) => {
             // succes in creating a new user 
             // console.log(auth)
             if(auth){
