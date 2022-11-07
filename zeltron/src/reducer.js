@@ -2,6 +2,14 @@ export const initialState = {
     basket: [],
     user: null
   };
+
+  export const actionTypes = {
+    ADD_TO_BASKET: "ADD_TO_BASKET",
+    REMOVE_FROM_BASKET: "REMOVE_FROM_BASKET",
+    SET_USER: "SET_USER",
+    EMPTY_BASKET: "EMPTY_BASKET"
+}
+
     //a seletor for loop increment and returns
     export const getBasketTotal = (basket) =>
     basket?.reduce((amount, item)=> item.price + amount, 0);
