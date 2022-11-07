@@ -5,6 +5,7 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { Link } from "react-router-dom";
 import { useStateValue } from './StateProvider';
 import { auth } from "./firebase";
+import { Zoom } from '@material-ui/core';
 
 function Header() {
   const [{basket, user}, dispatch] = useStateValue();
@@ -28,10 +29,13 @@ function Header() {
         
       
 
-      <div className="header_search">
-        <input className="header_searchInput" type="text" />
-        <SearchIcon className="header_searchIcon" />
-      </div>
+        <Zoom in={true}>
+        <div
+        className="header_search">
+            <input className="header_searchInput" type="text" />
+            <SearchIcon className="header_searchIcon" />
+            
+        </div></Zoom>
 
       <div className="header_nav">
         <Link to={!user && '/login'}  >

@@ -1,22 +1,28 @@
 import React from 'react'
 import './Product.css';
 import { useStateValue } from './StateProvider';
-function Product({id,title, image, price, rating }) {
-  const [{basket}, dispatch] = useStateValue();
+import { store } from 'react-notifications-component';
+import { actionTypes } from './reducer';
 
-  const addToBasket = () =>{
-    //dispatch the item in to the data layer
-    dispatch ({
-      type: 'ADD_TO_BASKET',
-      item: {
-        id: id,
-        title: title,
-        image: image,
-        price: price,
-        rating: rating,
-      },
-    });
-      
+
+
+function Product({ id, title, image, price, rating }) {
+
+  const [{ basket }, dispatch] = useStateValue();
+  // console.log('basket', basket)
+  const addToBasket = () => {
+      // dispatch ADD_TO_BASKET action with item
+      dispatch({
+          type: actionTypes.ADD_TO_BASKET,
+          item: {
+              id,
+              title,
+              image,
+              price,
+              rating
+          }
+      })
+
   }
 
   return (
@@ -47,6 +53,7 @@ function Product({id,title, image, price, rating }) {
     </div>
   );
 }
+
 
 export default Product
 
