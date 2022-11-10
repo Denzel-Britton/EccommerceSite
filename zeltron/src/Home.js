@@ -7,14 +7,18 @@ import Product from './Product';
 function Home() {
  
   return (
+   
     <div className='home'>
+      
+     
 <div className="home_container">
+<h1> STILL BEING WORKED ON. FEEL FREE TO LOOK AROUND </h1>
     <img className='home_image'
     src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Sports_en_US_1x._CB431860448_.jpg"
     />
 
     <div className="home_row">
-     
+    
     
        <Product  id="1" title="WiFi enabled Complete set of Dell OptiPlex Dual Core Windows 10 Desktop PC Computer" image="https://images-na.ssl-images-amazon.com/images/I/41x81v5aR8L._AC_.jpg" price={85} rating={5} />
        <Product  id="2" title="USB C Cable, JSAUX (2m 2-Pack) Type C Fast Charger Charging Cable Braided " image="https://images-na.ssl-images-amazon.com/images/I/61kEKkw2D%2BL._SX425_.jpg" price={6.99} rating={5} />
