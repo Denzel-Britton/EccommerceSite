@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
+import Payment from "./Payment";
 import Login from "./Login";
 import{ auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
@@ -49,7 +50,8 @@ return (
         </Route>
         <Route exact path="/payment">
           <Header /> 
-          <h1>Paymeny page </h1>
+          <Payment />
+          
         </Route>
         <Route exact path="/">
           <Header /> 
