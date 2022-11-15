@@ -47,6 +47,10 @@ return (
           <Header /> 
           <Checkout/>
         </Route>
+        <Route exact path="/payment">
+          <Header /> 
+          <h1>Paymeny page </h1>
+        </Route>
         <Route exact path="/">
           <Header /> 
           <Home/>
