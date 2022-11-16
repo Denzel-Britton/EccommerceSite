@@ -8,6 +8,7 @@ import {Link} from "react-router-dom";
 function Payment() {
 
     const [{basket, user}, dispatch]= useStateValue();
+    
   return (
     <div className='payment'>
         <div className='payment_container'>
@@ -51,11 +52,9 @@ function Payment() {
                 <div className="paymeny_details">
                     {/* stripe */}
                 </div>
-
         </div>
 
     </div>
   )
 }
-
 export default Payment
