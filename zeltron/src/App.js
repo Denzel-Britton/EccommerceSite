@@ -51,7 +51,6 @@ return (
         <Route exact path="/payment">
           <Header /> 
           <Payment />
-          
         </Route>
         <Route exact path="/">
           <Header /> 
